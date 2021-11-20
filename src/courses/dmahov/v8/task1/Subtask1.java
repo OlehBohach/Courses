@@ -1,6 +1,8 @@
-package courses.dmahov.v8.task_1;
+package courses.dmahov.v8.task1;
 
-public class Subtask_1 {
+import java.util.Scanner;
+
+public class Subtask1 {
     public static void num8_1(String[] args) {
         // 3 в 4 степени
         double c1 = 3;

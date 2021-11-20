@@ -1,8 +1,8 @@
-package courses.dmahov.v8.task_1;
+package courses.dmahov.v8.task1;
 
 import java.util.Scanner;
 
-public class Subtast_2 {
+public class Subtask2 {
     public static void num8(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите значение первого катета: ");
