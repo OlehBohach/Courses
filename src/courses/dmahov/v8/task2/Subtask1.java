@@ -13,16 +13,33 @@ public class Subtask1 {
         double m1 = in.nextDouble();
         int out1 = 0;
         int out2 = 0;
+        int out3 = 0;
         if ( k1 % 2 == 0 ) {
             out2 = out1 + 1;
+            if (k1 >= 0) {
+                out3 = out3 +1;
+            }
         }
         if (l1 % 2 == 0) {
             out2 = out1 + 1;
+            if (l1 >= 0) {
+                out3 = out3 +1;
+            }
         }
         if (m1 % 2 == 0) {
             out2 = out1 + 1;
+            if (m1 >= 0) {
+                out3 = out3 +1;
+            }
         }
+
+        System.out.print("Количество чётных чисел: ");
         System.out.println(out2);
 
+        System.out.print(out2);
+        System.out.println(out2);
+
+
     }
+
 }
