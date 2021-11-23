@@ -56,4 +56,30 @@ public class Subtask1 {
         System.out.println(out5);
     }
 
+    public static void num10(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите x координату точки m1: ");
+        double mx1 = in.nextDouble();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите y координату точки m1: ");
+        double my1 = in.nextDouble();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите x координату точки m2: ");
+        double mx2 = in.nextDouble();
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите y координату точки m2: ");
+        double my2 = in.nextDouble();
+        double m1 = mx1*mx1+my1*my1;
+        double m2 = mx2*mx2+my2*my2;
+        double m12 = Math.sqrt(m1);
+        double m22 = Math.sqrt(m2);
+        if (m12<m22){
+            System.out.println("Точка M1 ближе к нулю");
+        } else if (m12>m22){
+            System.out.println("Точка M2 ближе к нулю");
+        } else {
+            System.out.println("Точки M1 и M2 одинаково близки к нулю");
+        }
+    }
+
 }
