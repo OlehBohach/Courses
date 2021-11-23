@@ -20,19 +20,19 @@ public class Subtask1 {
         if ( k1 % 2 == 0 ) {
             out2 = out1 + 1;
             if (k1 >= 0) {
-                boolean k2 = true;
+                k2 = true;
             }
         }
         if (l1 % 2 == 0) {
             out2 = out1 + 1;
             if (l1 >= 0) {
-                boolean l2 = true;
+                l2 = true;
             }
         }
         if (m1 % 2 == 0) {
             out2 = out1 + 1;
             if (m1 >= 0) {
-                boolean m2 = true;
+                m2 = true;
             }
         }
         int out4 = 0;
