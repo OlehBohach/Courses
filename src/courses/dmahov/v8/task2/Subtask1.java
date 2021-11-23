@@ -13,33 +13,47 @@ public class Subtask1 {
         double m1 = in.nextDouble();
         int out1 = 0;
         int out2 = 0;
-        int out3 = 0;
+        boolean k2 = false;
+        boolean l2 = false;
+        boolean m2 = false;
+        double out3 = 0;
         if ( k1 % 2 == 0 ) {
             out2 = out1 + 1;
             if (k1 >= 0) {
-                out3 = out3 +1;
+                boolean k2 = true;
             }
         }
         if (l1 % 2 == 0) {
             out2 = out1 + 1;
             if (l1 >= 0) {
-                out3 = out3 +1;
+                boolean l2 = true;
             }
         }
         if (m1 % 2 == 0) {
             out2 = out1 + 1;
             if (m1 >= 0) {
-                out3 = out3 +1;
+                boolean m2 = true;
             }
         }
-
+        int out4 = 0;
+        if (k2 == true) {
+            out3 = out3 + k1;
+            out4 = out4+1;
+        }
+        if (l2 == true) {
+            out3 = out3 + l1;
+            out4 = out4+1;
+        }
+        if (m2 == true) {
+            out3 = out3 + m1;
+            out4 = out4+1;
+        }
+        double out5 = out3 / out4;
         System.out.print("Количество чётных чисел: ");
         System.out.println(out2);
 
-        System.out.print(out3);
-        System.out.println(out3);
-
-
+        System.out.print("Среднеарифметическое положительных чисел: ");
+        System.out.println(out5);
     }
 
 }
