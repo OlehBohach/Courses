@@ -36,8 +36,8 @@ public class Subtask1 {
         System.out.print("Количество чётных чисел: ");
         System.out.println(out2);
 
-        System.out.print(out2);
-        System.out.println(out2);
+        System.out.print(out3);
+        System.out.println(out3);
 
 
     }
