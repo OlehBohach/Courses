@@ -18,7 +18,7 @@ public class Subtask2 {
     }
     public static void num8() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Введите время в часах");
+        System.out.print("Введите время в часах: ");
         double time1 = in.nextDouble();
         if (time1 >= 0 && time1 <= 3) {
             System.out.println("Доброй ночи!");
@@ -32,6 +32,9 @@ public class Subtask2 {
         if (time1 >= 4 && time1 <= 11) {
             System.out.println("Доброе утро!");
         }
+        else {
+            System.out.println("Вы ввели неверное время!");
+        }
     }
 
     public static void num10() {
@@ -42,6 +45,7 @@ public class Subtask2 {
         String str2 = " экзамена";
         String str3 = " экзамен";
         String out1 = "";
+        int ekz2 = (int)ekz1;
         ekz1 = Math.abs(ekz1) % 10;
         if (ekz1 == 0) {
             out1 = str1;
@@ -56,7 +60,7 @@ public class Subtask2 {
             out1 = str2;
         }
         System.out.print("Мы здали ");
-        System.out.print(ekz1);
+        System.out.print(ekz2);
         System.out.println(out1);
     }
 }
