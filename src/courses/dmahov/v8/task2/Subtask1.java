@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Subtask1 {
 
-    public static void num8(String[] args) {
+    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число К: ");
         double k1 = in.nextDouble();
@@ -36,15 +36,15 @@ public class Subtask1 {
             }
         }
         int out4 = 0;
-        if (k2 == true) {
+        if (k2) {
             out3 = out3 + k1;
             out4 = out4+1;
         }
-        if (l2 == true) {
+        if (l2) {
             out3 = out3 + l1;
             out4 = out4+1;
         }
-        if (m2 == true) {
+        if (m2) {
             out3 = out3 + m1;
             out4 = out4+1;
         }
