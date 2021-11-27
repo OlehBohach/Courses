@@ -3,7 +3,21 @@ package courses.dmahov.v8.task1;
 import java.util.Scanner;
 
 public class Subtask1 {
-    public static void num8_1(String[] args) {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Какое задание вы хотите запустить?");
+        System.out.println("1. 8.1");
+        System.out.println("2. 8.2");
+        System.out.print("Введите число: ");
+        double vv = in.nextDouble();
+        if (vv == 1) {
+            num8_1();
+        }
+        else if (vv == 2) {
+            num8_2();
+        }
+    }
+    public static void num8_1() {
         // 3 в 4 степени
         double c1 = 3;
         double c2 = 4;
@@ -38,7 +52,7 @@ public class Subtask1 {
         System.out.println(out11);
     }
 
-    public static void num8_2(String[] args) {
+    public static void num8_2() {
         // sin x
         double x1 = 360.0;
         double x2 = Math.toRadians(x1);

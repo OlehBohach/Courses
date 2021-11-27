@@ -3,7 +3,25 @@ package courses.dmahov.v8.task1;
 import java.util.Scanner;
 
 public class Subtask2 {
-    public static void num8(String[] args) {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Какое задание вы хотите запустить?");
+        System.out.println("1. 8");
+        System.out.println("2. 15");
+        System.out.println("3. 17");
+        System.out.print("Введите число: ");
+        double vv = in.nextDouble();
+        if (vv == 1) {
+            num8();
+        }
+        else if (vv == 2) {
+            num15();
+        }
+        else if (vv == 3) {
+            num17();
+        }
+    }
+    public static void num8() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите значение первого катета: ");
         double k1 = in.nextDouble();
@@ -23,7 +41,7 @@ public class Subtask2 {
         System.out.println("Площадь треугольника: "+ s2);
     }
 
-    public static void num15(String[] args) {
+    public static void num15() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите высоту треугольника в миллиметрах: ");
         double k1 = in.nextDouble();
@@ -44,7 +62,7 @@ public class Subtask2 {
         System.out.println("Периметр треугольника: "+ s2);
     }
 
-    public static void num17(String[] args) {
+    public static void num17() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите периметр правильноо треугольника: ");
         double k1 = in.nextDouble();
