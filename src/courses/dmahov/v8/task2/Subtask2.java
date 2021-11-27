@@ -2,7 +2,21 @@ package courses.dmahov.v8.task2;
 import java.util.Scanner;
 
 public class Subtask2 {
-    public static void num8(String[] args) {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Какое задание вы хотите запустить?");
+        System.out.println("1. 8");
+        System.out.println("2. 10");
+        System.out.print("Введите число: ");
+        double vv = in.nextDouble();
+        if (vv == 1) {
+            num8();
+        }
+        else if (vv == 2) {
+            num10();
+        }
+    }
+    public static void num8() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите время в часах");
         double time1 = in.nextDouble();
@@ -20,7 +34,7 @@ public class Subtask2 {
         }
     }
 
-    public static void num10(String[] args) {
+    public static void num10() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество экзаменов которое вы сдали: ");
         double ekz1 = in.nextDouble();
