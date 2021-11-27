@@ -1,5 +1,4 @@
 package courses.dmahov.v8.task2;
-
 import java.util.Scanner;
 
 public class Subtask2 {

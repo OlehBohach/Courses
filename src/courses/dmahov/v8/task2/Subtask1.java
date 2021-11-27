@@ -1,8 +1,8 @@
 package courses.dmahov.v8.task2;
-
 import java.util.Scanner;
 
 public class Subtask1 {
+
     public static void num8(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите число К: ");
