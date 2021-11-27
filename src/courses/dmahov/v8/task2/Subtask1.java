@@ -19,21 +19,16 @@ public class Subtask1 {
         double out3 = 0;
         if ( k1 % 2 == 0 ) {
             out2 = out1 + 1;
-            if (k1 >= 0) {
-                k2 = true;
-            }
+            k2 = true;
         }
         if (l1 % 2 == 0) {
             out2 = out1 + 1;
-            if (l1 >= 0) {
-                l2 = true;
-            }
+            l2 = true;
         }
+
         if (m1 % 2 == 0) {
             out2 = out1 + 1;
-            if (m1 >= 0) {
-                m2 = true;
-            }
+            m2 = true;
         }
         int out4 = 0;
         if (k2) {
@@ -54,9 +49,10 @@ public class Subtask1 {
 
         System.out.print("Среднеарифметическое положительных чисел: ");
         System.out.println(out5);
+        num10();
     }
 
-    public static void num10(String[] args) {
+    public static void num10() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите x координату точки m1: ");
         double mx1 = in.nextDouble();
