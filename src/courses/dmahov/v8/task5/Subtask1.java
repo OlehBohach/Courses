@@ -44,7 +44,7 @@ public class Subtask1 {
         if (gl2 < pb2) {
             numbs[1] = -1;
         }
-        if (gl3 < pb3) {
+        if (gl3 < pb3 && gl3 != pb3) {
             numbs[2] = -1;
         }
         if (gl4 < pb4) {
