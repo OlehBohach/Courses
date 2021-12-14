@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Subtask1 {
     public static void main(String[] args){
-        String File = "C:\\Users\\Dedik2\\Documents\\GitHub\\Rep2\\Courses\\src\\courses\\dmahov\\v8\\task5\\t.txt";
+        String File = "./src/courses/dmahov/v8/task5/t.txt";
         int[][] arr = null;
         try {
             try (Scanner in = new Scanner(new File(File))) {
