@@ -2,7 +2,7 @@ package courses.atulinov.lab1;
 
 import java.util.Scanner;
 
-public class Lab1ex3 {
+public class ex2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите значение первого катета: ");
