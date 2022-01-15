@@ -1,6 +1,6 @@
 package courses.atulinov.lab2;
 import java.util.Scanner;
-public class Lab2ex1 {
+public class ex1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double storona_kvadrata = scanner.nextDouble();

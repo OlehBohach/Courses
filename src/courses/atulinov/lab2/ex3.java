@@ -1,6 +1,6 @@
 package courses.atulinov.lab2;
 import java.util.Scanner;
-public class Lab2ex3 {
+public class ex3 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.print("Введите 1 число: ");
