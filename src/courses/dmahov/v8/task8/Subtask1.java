@@ -1,6 +1,5 @@
 package courses.dmahov.v8.task8;
 
-import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
