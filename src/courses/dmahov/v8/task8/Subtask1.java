@@ -35,8 +35,7 @@ public class Subtask1 {
     }
 
     public static void printDate(Calendar date) {
-        boolean b = true;
-        while (b=true) {
+        while (true) {
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
             System.out.println(dateFormat.format(date.getTime()));
             System.out.println("Для изменения даты напишите - 1\nДля обновления значений напишите - 2");
