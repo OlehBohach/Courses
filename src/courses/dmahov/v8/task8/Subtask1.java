@@ -3,6 +3,7 @@ package courses.dmahov.v8.task8;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Subtask1 {
@@ -34,11 +35,24 @@ public class Subtask1 {
         setDate(date);
     }
 
+    public static void getActualDate() {
+        Date dateNow = new Date();
+        SimpleDateFormat formatYear = new SimpleDateFormat("yyyy");
+        SimpleDateFormat formatMonth = new SimpleDateFormat("MM");
+        SimpleDateFormat formatDay = new SimpleDateFormat("dd");
+        String year = formatYear.format(dateNow);
+        String month = formatMonth.format(dateNow);
+        String day = formatDay.format(dateNow);
+        date.set(Calendar.DATE, Integer.parseInt(day));
+        date.set(Calendar.MONTH, Integer.parseInt(month));
+        date.set(Calendar.YEAR, Integer.parseInt(year));
+    }
+
     public static void printDate(Calendar date) {
         while (true) {
             DateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy");
             System.out.println(dateFormat.format(date.getTime()));
-            System.out.println("Для изменения даты напишите - 1\nДля обновления значений напишите - 2");
+            System.out.println("Для изменения даты напишите - 1\nДля обновления значений напишите - 2\nДля сброса даты напишите - 3");
             System.out.print("Enter: ");
             Scanner i = new Scanner(System.in);
             int ch = i.nextInt();
@@ -52,7 +66,11 @@ public class Subtask1 {
                 dateSetting(day, month, year);
             } else if (ch == 2) {
                 System.out.println("Обновляю..");
-            } else {
+            } else if (ch == 3) {
+                System.out.println("Сбрасываем дату..");
+                getActualDate();
+            }
+            else {
                 System.out.println("Вы ввели неверное число.");
             }
 
